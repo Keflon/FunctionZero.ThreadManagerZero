@@ -1,0 +1,8 @@
+﻿ToDo:
+=====
+
+Add a 'depends on' feature so a job will not start until another has finished?
+- Is that wise? Perhaps this should be dealt with outside the library.
+- Use a 'job completed' delegate!																							Done.
+- Not useful? Cannot enqueue new jobs in the job-completed event because the queue may be full causing deadlock (if all threads stall).
+
